@@ -1,0 +1,149 @@
+section.breadcrumbwrap.clearfix
+	.breadcrumbimg
+		img(src="img/breadcrumb/1.jpg", alt="")
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Định cư mỹ
+				meta(itemprop='position', content='2')
+.container
+	.row.flex.flex-wrap
+		.col-xs-12.col-lg-9
+			section.support-page.clearfix
+				h1.pagetitle Hỏi đáp
+				ul.nav.nav-tabs(role='tablist')
+					li.nav-item
+						a.nav-link.active(data-toggle='tab', href='#home', role='tab') Luật di trú
+					li.nav-item
+						a.nav-link(data-toggle='tab', href='#profile', role='tab') Người mới nhập cư
+					li.nav-item
+						a.nav-link(data-toggle='tab', href='#messages', role='tab') Kinh nghiệm phỏng vấn
+				.tab-content
+					#home.tab-pane.active(role='tabpanel')
+						.faqlist.clearfix
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+							.faq
+								.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+								.faqcontent.content
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					#profile.tab-pane(role='tabpanel')
+					#messages.tab-pane(role='tabpanel')
+				//- .register-info.clearfix
+					.module-title Đăng ký thông tin bên dưới để được chuyên viên tư vấn tiếp nhận tư vấn hồ sơ miễn phí
+					.form-group
+						label(for="") Họ và tên(*):
+						input(type="text")
+					.form-group
+						label(for="") Số điện thoại:
+						input(type="text")
+					.form-group
+						label(for="") Email:
+						input(type="text")
+					.form-group
+						label(for="") Nội dung yêu cầu:
+						textarea(name="", cols="30", rows="5")
+					input(type="submit", value="Gửi yêu cầu")
+		.col-xs-12.col-lg-3
+			.send-nessage.clearfix
+				.module-title Đặt câu hỏi
+				.form-group
+					label(for="") Họ và tên(*):
+					input(type="text")
+				.form-group
+					label(for="") Số điện thoại:
+					input(type="text")
+				.form-group
+					label(for="") Email:
+					input(type="text")
+				.form-group
+					label(for="") Nội dung câu hỏi:
+					textarea(name="", cols="30", rows="5")
+				input(type="submit", value="Gửi")
+			nav.other-news.clearfix
+				.othertitle Bài viết mới
+				ul 
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/1.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Diện hôn phu - hôn thê xác suất đậu VISA sẽ cao hơn ?
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/2.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Đương đơn hồ sơ bảo lãnh hôn phu hôn thê phải làm gì?
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/3.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Điều cần tránh khi tạo bằng chứng cho hồ sơ hôn phu hôn thê
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/4.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Chứng minh mối quan hệ trong hồ sơ bảo lãnh hôn phu hôn thê
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/5.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Chứng minh khả năng tài chính để mở hồ sơ bảo lãnh

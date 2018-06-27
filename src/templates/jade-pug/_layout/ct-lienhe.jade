@@ -1,0 +1,53 @@
+section#map.contact-map.clearfix
+	iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8455637712623!2d106.74324816538508!3d10.975027192186946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174da16f3633f45%3A0x6409ce313add8931!2zQsOsbmggUGjGsOG7m2MgQiwgQsOsbmggQ2h14bqpbiwgVHguIFRodeG6rW4gQW4sIEJpbmggRHVvbmcsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1491970475816', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+section.breadcrumbwrap.clearfix
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Định cư mỹ
+				meta(itemprop='position', content='2')
+.container
+	section.contact-page.clearfix
+		h1.pagetitle Contact 
+		.content 
+			p Mọi thắc mắc xin vui lòng để lại lời nhắn cho chúng tôi qua form bên dưới
+	section.contact-form.clearfix
+		.row.flex.flex-wrap
+			.col-xs-12.col-md-6.col-lg-4
+				.form-group
+					label(for="") Họ và tên:
+					input(type="text")
+			.col-xs-12.col-md-6.col-lg-4
+				.form-group
+					label(for="") Số điện thoại:
+					input(type="text")
+			.col-xs-12.col-md-6.col-lg-4
+				.form-group
+					label(for="") Địa chỉ email:
+					input(type="text")
+			.col-xs-12
+				.form-group
+					label(for="") Nội dung lời nhắn
+					textarea(name="", cols="30", rows="6")
+			.col-xs-12
+				.btnwrap
+					input(type="submit", value="Send")
+	section.contact-info.clearfix
+		ul 
+			li 
+				h1.company Công ty TNHH Hào Uyên
+			li Lầu 17, Empress Tower, 138-142 Hai Bà Trưng, Quận 1, Tp. Hồ Chí Minh
+			li Hotline: 
+				a(href="tel:0909 504 709") 0909 504 709
+				| – 
+				a(href="tel:0963 870 848") 0963 870 848
+			li Email: 
+				a(href="mailto:info@usvisa.com.vn") info@usvisa.com.vn
+			li Website: 
+				a(href="http://usvisa.com.vn") usvisa.com.vn
+		

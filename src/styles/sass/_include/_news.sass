@@ -1,0 +1,285 @@
+.news-page
+	padding: 40px 0
+.pagedes
+	color: darken($white,60%)
+	margin-bottom: 30px
+.page-category
+	margin-bottom: 30px
+	ul 
+		text-align: center
+		li 
+			display: inline-block
+			padding: 7px 15px
+			+bor-rad(50px)
+			border: 1px solid $blue
+			+ li 
+				margin-left: 5px
+			a 
+				color: $main
+			&:hover
+				a 
+					color: $red
+			&.active
+				border-color: $red
+				background: $red
+				a 
+					color: $white
+
+.newslist
+	article
+		margin-bottom: 30px
+.newscol
+	figure 
+		.newsimg
+			display: block
+			overflow: hidden
+			img 
+				width: 100%
+				+transition(all,0.3s)
+		figcaption
+			border: 1px solid darken($white,15%)
+			border-top: none
+			padding: 20px
+			.newsname
+				+fs(16rem)
+				line-height: 1.5
+				font-weight: 700
+				margin-bottom: 10px
+				a 
+					color: $black
+				&:after
+					content: ''
+					display: block
+					width: 30px
+					height: 1px
+					background: $red
+					margin-top: 10px
+					+transition(all,0.3s)
+			time
+				+fs(12rem)
+				text-transform: uppercase
+				color: $blue
+				font-weight: 700
+				display: block
+				margin-bottom: 20px
+				&:before
+					content: '\f017'
+					font-family: 'fontawesome'
+					margin-right: 3px
+					color: darken($white,60%)
+			.newsdes
+				+fs(14rem)
+				color: darken($white,60%)
+		&:hover
+			.newsimg
+				img 
+					+transform(scale3d(1.2,1.2,1))
+			figcaption
+				.newsname
+					a 
+						color: $blue
+					&:after
+						width: 60px
+.bloglist
+	.newscol
+		margin-bottom: 30px
+		figure 
+			.newsimg
+				height: 300px
+			figcaption
+				.newsname
+					+fs(18rem)
+					text-transform: uppercase
+
+.pages
+	text-align: center
+	.pagination
+		text-align: center
+		li
+			display: inline-block
+			vertical-align: middle
+			+ li 
+				margin-left: 3px
+			a,span
+				display: block
+				width: 36px
+				height: 36px
+				line-height: 36px
+				text-align: center
+				+bor-rad(3px)
+				+fs(14rem)
+				color: $main
+				border: 1px solid $blue
+			&:hover
+				a,span 
+					color: $red
+			&.active
+				a,span 
+					background: $red
+					color: $white
+					border-color: $red
+
+.newsmain-img
+	margin-bottom: 10px
+	img 
+		width: 100%
+.newspage-name
+	+fs(20rem)
+	font-weight: 700
+	text-transform: uppercase
+	line-height: 1.5
+	margin-bottom: 10px
+	&:after
+		content: ''
+		display: block
+		width: 60px
+		height: 1px
+		background: $red
+		margin-top: 10px
+.newsdetail
+	padding-bottom: 10px
+	border-bottom: 1px solid darken($white,10%)
+	margin-bottom: 20px
+	time 
+		display: inline-block
+		text-transform: uppercase
+		+fs(12rem)
+		font-weight: 700
+		background: lighten($blue,50%)
+		+bor-rad(2px)
+		border: 1px solid $blue
+		color: $blue
+		line-height: 1
+		padding: 3px 5px
+		margin-right: 15px
+		&:before
+			content: '\f017'
+			font-family: 'fontawesome'
+			margin-right: 3px
+			font-weight: normal
+	.share
+		display: inline-block
+		vertical-align: middle
+.register-info
+	+bor-rad(5px)
+	border: 2px dashed $red
+	background: lighten($blue,62%)
+	padding: 20px 30px
+	.module-title
+		color: black
+		font-weight: 600
+		+fs(16rem)
+		color: $blue
+		margin-bottom: 15px
+		&:before
+			content: '\f044'
+			font-family: 'fontawesome'
+			font-weight: normal
+			margin-right: 5px
+	.form-group
+		margin-bottom: 10px
+		+flexbox
+		flex-wrap: wrap
+		label
+			width: 150px
+			padding: 10px 0
+		input, textarea
+			width: calc(100% - 150px)
+			+bor-rad(3px)
+			border: 1px solid darken(white,15%)
+			padding: 10px 15px
+			&:hover
+				border-color: darken($white,30%)
+			&:focus
+				border-color: $blue
+	input[type="reset"]
+		display: none
+	input[type="submit"]
+		+mainbutton
+		border: none
+		margin-left: 150px
+		margin-top: 10px
+.btn-backpage
+	display: block
+	margin-top: 40px
+	// +fs(18rem)
+	line-height: 40px
+	font-weight: 600
+	color: $blue
+	+bor-rad(3px)
+	margin-bottom: 20px
+	background: darken($white,5%)
+	+media-breakpoint-down(md)
+		margin-top: 0
+	&:before
+		content: '\f104'
+		font-family: 'fontawesome'
+		margin: 0 10px
+	&:hover
+		color: $white
+		background: $blue
+
+.othertitle
+	+fs(18rem)
+	color: $blue
+	font-weight: 700
+	margin-bottom: 15px
+.sidebar-category
+	margin-bottom: 20px
+	&.cate2
+		margin-top: 40px
+		+media-breakpoint-down(md)
+			margin-top: 0
+	ul 
+		li 
+			border-bottom: 1px solid darken($white,10%)
+			a 
+				display: block
+				color: darken($white,60%)
+				padding: 10px 0
+				&:hover
+					color: $red
+			&.active
+				a 
+					color: $red
+					font-weight: 700
+.other-news
+	margin-bottom: 40px
+	&.newspost
+		margin-top: 40px
+		+media-breakpoint-down(md)
+			margin-top: 0
+	ul 
+		.news
+			border-bottom: 1px solid darken($white,10%)
+			padding: 10px 0
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.newsimg
+					width: 80px
+					img 
+						max-width: 100%
+						max-height: 100%
+				figcaption
+					width: calc(100% - 80px)
+					padding-left: 10px
+					.newsname
+						font-weight: 700
+						+fs(14rem)
+						a 
+							color: $main
+							&:hover
+								color: $blue	
+.us-info
+	border-top: 1px dashed $blue
+	margin-top: 15px
+	padding-top: 15px
+	margin-bottom: 30px
+	p, ul
+		margin-bottom: 10px
+	a 
+		color: $main
+		font-weight: bold
+		&:hover
+			color: $red

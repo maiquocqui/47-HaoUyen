@@ -1,0 +1,39 @@
+.breadcrumbwrap
+	// background: darken($white,2%)
+	+pos(rel,null)
+	z-index: 1
+	.breadcrumbimg
+		img
+			width: 100%
+	.container
+		+pos(rel,null)
+	.breadcrumb
+		margin: 0
+		padding: 10px 0
+		+bor-rad(0)
+		background: none
+		border-bottom: 1px solid darken($white,10%)
+		// margin-bottom: 40px	
+		// +pos(abs, 100% 15px null 15px)
+		z-index: 1
+		li 
+			float: left
+			color: $blue
+			+fs(14rem)
+			&:first-child
+				&:before
+					content: '\f015'
+					font-family: 'fontawesome'
+					margin-right: 5px
+					line-height: 1
+			+ li 
+				&:before
+					content: '-'
+					margin: 0px 10px
+					color: darken($white,40%)
+			a 
+				color: $blue
+				font-weight: 600
+				&:hover
+					color: $red
+			
